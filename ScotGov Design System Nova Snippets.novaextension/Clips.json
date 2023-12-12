@@ -1,225 +1,220 @@
 {
   "clips" : [
     {
-      "children" : [
-        {
-          "content" : "<div class=\"ds_accordion\" data-module=\"ds-accordion\">\n\t<button type=\"button\" class=\"ds_link  ds_accordion__open-all  js-open-all\">Open all <span class=\"visually-hidden\">sections<\/span><\/button>\n\n\t<div class=\"ds_accordion-item\">\n\t\t<input type=\"checkbox\" class=\"visually-hidden  ds_accordion-item__control\" id=\"panel-${0:Panel number}\" aria-labelledby=\"panel-${0:Panel number}-heading\" \/>\n\t\t<div class=\"ds_accordion-item__header\">\n\t\t\t<h3 id=\"panel-${0:Panel number}-heading\" class=\"ds_accordion-item__title\">\n\t\t\t\t${1:Accordion title}\n\t\t\t<\/h3>\n\t\t\t<span class=\"ds_accordion-item__indicator\"><\/span>\n\t\t\t<label class=\"ds_accordion-item__label\" for=\"panel-${0:Panel number}\"><span class=\"visually-hidden\">Show this section<\/span><\/label>\n\t\t<\/div>\n\t\t<div class=\"ds_accordion-item__body\">\n\t\t\t<p>${3:Panel body text}<\/p>\n\t\t<\/div>\n\t<\/div>\n<\/div>$99",
-          "name" : "ScotGov Accordion",
-          "scope" : "editor",
-          "trigger" : "scotgov-accordion"
-        },
-        {
-          "content" : "<div class=\"ds_accordion-item\">\n\t<input type=\"checkbox\" class=\"visually-hidden  ds_accordion-item__control\" id=\"panel-${0:Panel number}\" aria-labelledby=\"panel-${0:Panel number}-heading\" \/>\n\t<div class=\"ds_accordion-item__header\">\n\t\t<h3 id=\"panel-${0:Panel number}-heading\" class=\"ds_accordion-item__title\">\n\t\t\t${1:Accordion title}\n\t\t<\/h3>\n\t\t<span class=\"ds_accordion-item__indicator\"><\/span>\n\t\t<label class=\"ds_accordion-item__label\" for=\"panel-${0:Panel number}\"><span class=\"visually-hidden\">Show this section<\/span><\/label>\n\t<\/div>\n\t<div class=\"ds_accordion-item__body\">\n\t\t<p>${3:Panel body text}<\/p>\n\t<\/div>\n<\/div>$99",
-          "name" : "ScotGov Accordion Item",
-          "scope" : "editor",
-          "trigger" : "scotgov-accordion-item"
-        },
-        {
-          "content" : "<div class=\"ds_aspect-box  ds_aspect-box--${0:square \/ 43 \/ 219}\">\n\t<img src=\"$1\" alt=\"$2\" class=\"ds_aspect-box__inner\">\n<\/div>$99",
-          "name" : "ScotGov Aspect Box (Image)",
-          "scope" : "editor",
-          "trigger" : "scotgov-aspect-box-image"
-        },
-        {
-          "content" : "<nav aria-label=\"Breadcrumb\">\n\t<ol class=\"ds_breadcrumbs\">\n\t\t<li class=\"ds_breadcrumbs__item\">\n\t\t\t<a class=\"ds_breadcrumbs__link\" href=\"${0:Item 1 link}\">\n\t\t\t\t${1:Item 1 title}\n\t\t\t<\/a>\n\t\t<\/li>\n\n\t\t<li class=\"ds_breadcrumbs__item${2:  visually-hidden}\" aria-current=\"page\">\n\t\t\t${3:Item 2 title}\n\t\t<\/li>\n\t<\/ol>\n<\/nav>$99",
-          "name" : "ScotGov Breadcrumb",
-          "scope" : "editor",
-          "trigger" : "scotgov-breadcrumb"
-        },
-        {
-          "content" : "<li class=\"ds_breadcrumbs__item\">\n\t<a class=\"ds_breadcrumbs__link\" href=\"${0:Item link}\">\n\t\t${1:Item title}\n\t<\/a>\n<\/li>$99",
-          "name" : "ScotGov Breadcrumb Item",
-          "scope" : "editor",
-          "trigger" : "scotgov-breadcrumb-item"
-        },
-        {
-          "content" : "<${0:a or button} class=\"ds_button${1:  ds_button--cancel}${2:  ds_button--secondary}${3:  ds_button--small}\">${4:Button text}<\/${0:a or button}>$99",
-          "name" : "ScotGov Button",
-          "scope" : "editor",
-          "trigger" : "scotgov-button"
-        },
-        {
-          "content" : "<div class=\"ds_button-group\">\n\n\t${:\/\/Use two or more ScotGov Buttons here}\n\n<\/div>",
-          "name" : "ScotGov Button Group",
-          "scope" : "editor",
-          "trigger" : "scotgov-button-group"
-        },
-        {
-          "content" : "<div class=\"ds_question\" data-module=\"ds-character-count\"${0: data-threshold=\"80\"}>\n\t<label class=\"ds_label\" for=\"$1\">${2:Label text}<\/label>\n\t<input class=\"ds_input\" id=\"$1\" name=\"$1\" type=\"text\" maxlength=\"${3:20}\" \/>\n<\/div>$99",
-          "name" : "ScotGov Character Count Input",
-          "scope" : "editor",
-          "trigger" : "scotgov-character-count--input"
-        },
-        {
-          "content" : "<div class=\"ds_question\" data-module=\"ds-character-count\"${0: data-threshold=\"80\"}>\n\t<label class=\"ds_label\" for=\"$1\">${2:Label text}<\/label>\n\t<textarea class=\"ds_input\" id=\"$1\" name=\"$1\" rows=\"${3:5}\" maxlength=\"${4:25}\"><\/textarea>\n<\/div>$99",
-          "name" : "ScotGov Character Count Textarea",
-          "scope" : "editor",
-          "trigger" : "scotgov-character-count--textarea"
-        },
-        {
-          "content" : "<div class=\"ds_question\">\n\t<fieldset aria-describedby=\"${0:Group name}-hint\">\n\t\t<legend>${1:Question text}<\/legend>\n\t\t<p class=\"ds_hint-text\" id=\"${0:Group name}-hint\">${2:Hint text}<\/p>\n\n\t\t<div class=\"ds_field-group\">\n\t\t\t<div class=\"ds_${3:checkbox or radio}\">\n\t\t\t\t<input class=\"ds_${3:checkbox or radio}__input\" id=\"${4:Item ID}\" name=\"${0:Group name}\" type=\"${3:checkbox or radio}\" \/>\n\t\t\t\t<label class=\"ds_${3:checkbox or radio}__label\" for=\"${4:Item ID}\">${5:Item text}<\/label>\n\t\t\t<\/div>\n\n\t\t\t<div class=\"ds_${3:checkbox or radio}\">\n\t\t\t\t<input class=\"ds_${3:checkbox or radio}__input\" id=\"${6:Item ID}\" name=\"${0:Group name}\" type=\"${3:checkbox or radio}\" \/>\n\t\t\t\t<label class=\"ds_${3:checkbox or radio}__label\" for=\"${6:Item ID}\">${7:Item text}<\/label>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/fieldset>\n<\/div>",
-          "name" : "ScotGov Checkboxes\/Radios",
-          "scope" : "editor",
-          "trigger" : "scotgov-checkboxes-radios"
-        },
-        {
-          "content" : "<div class=\"ds_${0:checkbox or radio}\">\n\t<input class=\"ds_${0:checkbox or radio}__input\" id=\"${1:Item ID}\" name=\"${2:Group name}\" type=\"${0:checkbox or radio}\" \/>\n\t<label class=\"ds_${0:checkbox or radio}__label\" for=\"${1:Item ID}\">${3:Item text}<\/label>\n<\/div>$99",
-          "name" : "ScotGov Checkbox\/Radio Item",
-          "scope" : "editor",
-          "trigger" : "scotgov-checkbox-radio-item"
-        },
-        {
-          "content" : "<p class=\"ds_checkbox-separator\">or<\/p>\n\n<div class=\"ds_checkbox\">\n\t<input class=\"ds_checkbox__input\" id=\"${0:Item ID}\" name=\"${1:Group name}\" type=\"checkbox\" data-behaviour=\"exclusive\" \/>\n\t<label class=\"ds_checkbox__label\" for=\"${0:Item ID}\">${2:Item text}<\/label>\n<\/div>$99",
-          "name" : "ScotGov Checkbox None Item",
-          "scope" : "editor",
-          "trigger" : "scotgov-checkbox-none-item"
-        },
-        {
-          "content" : "<fieldset>\n\t<legend>${0:Question text}<\/legend>\n\t<p class=\"ds_hint-text\">For example, 31 3 1980<\/p>\n\t\n\t<div class=\"ds_datepicker  ds_datepicker--multiple\" data-module=\"ds-datepicker\">\n\t\t<div class=\"ds_datepicker__input-wrapper\">\n\t\t\t<div>\n\t\t\t\t<label class=\"ds_label\" for=\"day\">Day<\/label>\n\t\t\t\t<input class=\"ds_input ds_input--fixed-2 js-datepicker-date\" id=\"day\" name=\"${1:Group name}\"><\/input>\n\t\t\t<\/div>\n\t\t\t<div>\n\t\t\t\t<label class=\"ds_label\" for=\"month\">Month<\/label>\n\t\t\t\t<input class=\"ds_input ds_input--fixed-2 js-datepicker-month\" id=\"month\" name=\"${1:Group name}\"><\/input>\n\t\t\t<\/div>\n\t\t\t<div>\n\t\t\t\t<label class=\"ds_label\" for=\"year\">Year<\/label>\n\t\t\t\t<input class=\"ds_input ds_input--fixed-4 js-datepicker-year\" id=\"year\" name=\"${1:Group name}\"><\/input>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n<\/fieldset>$99",
-          "name" : "ScotGov Date Picker",
-          "scope" : "editor",
-          "trigger" : "scotgov-date-picker"
-        },
-        {
-          "content" : "<details class=\"ds_details\">\n\t<summary class=\"ds_details__summary\">\n\t\t${0:Summary\/title text}\n\t<\/summary>\n\t\n\t<div class=\"ds_details__text\">\n\t\t<p>${1:Body\/hidden text}<\/p>\n\t<\/div>\n<\/details>$99",
-          "name" : "ScotGov Details",
-          "scope" : "editor",
-          "trigger" : "scotgov-details"
-        },
-        {
-          "content" : "<p class=\"ds_question__error-message\">${0:Error text}<\/p>$99",
-          "name" : "ScotGov Error Text",
-          "scope" : "editor",
-          "trigger" : "scotgov-error-text"
-        },
-        {
-          "content" : "<div class=\"ds_error-summary\" id=\"error-summary\" aria-labelledby=\"error-summary-title\" role=\"alert\">\n\t<h2 class=\"ds_error-summary__title\" id=\"error-summary-title\">There is a problem<\/h2>\n\n\t<ul class=\"ds_error-summary__list\">\n\t\t<li>\n\t\t\t<a href=\"#${0:Quention ID}\">${1:Error text}<\/a>\n\t\t<\/li>\n\t<\/ul>\n<\/div>$99",
-          "name" : "ScotGov Error Summary",
-          "scope" : "editor",
-          "trigger" : "scotgov-error-summary"
-        },
-        {
-          "content" : "<header class=\"ds_feature-header${0:  ds_feature-header--background}\">\n\t<div class=\"ds_feature-header__primary\">\n\t\t<h1 class=\"ds_feature-header__title\">${1:Header text}<\/h1>\n\t\t<p>${2:Body text}<\/p>\n\t<\/div>\n\n\t<div class=\"ds_feature-header__secondary\">\n\t\t<img class=\"ds_feature-header__image\" alt=\"\" src=\"${3:Image source} \/>\n\t<\/div>\n<\/header>$99",
-          "name" : "ScotGov Feature Header",
-          "scope" : "editor",
-          "trigger" : "scotgov-feature-header"
-        },
-        {
-          "content" : "<div class=\"ds_inset-text\">\n\t<div class=\"ds_inset-text__text\">\n\t\t${0:Text}\n\t<\/div>\n<\/div>$99",
-          "name" : "ScotGov Inset Text",
-          "scope" : "editor",
-          "trigger" : "scotgov-inset-text"
-        },
-        {
-          "content" : "<div class=\"ds_notification-panel ds_notification-panel--success\">\n\t<h1 class=\"ds_notification-panel__title\">${0:Title text}<\/h1>\n\t<div class=\"ds_notification-panel__content\">\n\t\t<p>Your reference number is <br \/><strong class=\"beta\">SG0123456<\/strong><\/p>\n\t<\/div>\n<\/div>$99",
-          "name" : "ScotGov Notification Panel",
-          "scope" : "editor",
-          "trigger" : "scotgov-notification-panel"
-        },
-        {
-          "content" : "<header class=\"ds_page-header\">\n\t<span class=\"ds_page-header__label  ds_content-label\">${0:Subtitle\/section name text}<\/span>\n\t<h1 class=\"ds_page-header__title\">${1:Title text}<\/h1>\n\n\t<dl class=\"ds_page-header__metadata  ds_metadata\">\n\t\t<div class=\"ds_metadata__item\">\n\t\t\t<dt class=\"ds_metadata__key\">Last updated<\/dt>\n\t\t\t<dd class=\"ds_metadata__value\">${2:Date text}<\/dd>\n\t\t<\/div>\n\t<\/dl>\n<\/header>$99",
-          "name" : "ScotGov Page Header",
-          "scope" : "editor",
-          "trigger" : "scotgov-page-header"
-        },
-        {
-          "content" : "<nav class=\"ds_pagination\" aria-label=\"Search result pages\">\n\t<ul class=\"ds_pagination__list\">\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Page 1\" aria-current=\"page\" class=\"ds_pagination__link  ds_current\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">1<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Page 2\" class=\"ds_pagination__link\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">2<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Page 3\" class=\"ds_pagination__link\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">3<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Page 4\" class=\"ds_pagination__link\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">4<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\" aria-hidden=\"true\">\n\t\t\t<span class=\"ds_pagination__link  ds_pagination__link--ellipsis\">&hellip;<\/span>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Last page, page 27\" class=\"ds_pagination__link\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">27<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Next page\" class=\"ds_pagination__link  ds_pagination__link--text  ds_pagination__link--icon\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">Next<\/span>\n\t\t\t\t<svg class=\"ds_icon\" aria-hidden=\"true\" role=\"img\">\n\t\t\t\t\t<use href=\"\/assets\/images\/icons\/icons.stack.svg#chevron_right\"><\/use>\n\t\t\t\t<\/svg>\n\t\t\t<\/a>\n\t\t<\/li>\n\t<\/ul>\n<\/nav>",
-          "name" : "ScotGov Pagination",
-          "scope" : "editor",
-          "trigger" : "scotgov-pagination"
-        },
-        {
-          "content" : "<div>\n\t<label class=\"ds_label\" for=\"${0:Select ID\/Name}\">${1:Question text}<\/label>\n\t<div class=\"ds_select-wrapper  ds_input--fluid-one-third\">\n\t\t<select class=\"ds_select\" id=\"${0:Select ID\/Name}\" name=\"${0:Select ID\/Name}\">\n\t\t\t<option><\/option>\n\t\t\t<option>Accordion<\/option>\n\t\t\t<option>Breadcrumbs<\/option>\n\t\t\t<option>Button<\/option>\n\t\t<\/select>\n\t\t<span class=\"ds_select-arrow\" aria-hidden=\"true\"><\/span>\n\t<\/div>\n<\/div>$99",
-          "name" : "ScotGov Select",
-          "scope" : "editor",
-          "trigger" : "scotgov-select"
-        },
-        {
-          "content" : "<nav class=\"ds_sequential-nav\" aria-label=\"Article navigation\">\n\t<div class=\"ds_sequential-nav__item  ds_sequential-nav__item--prev\">\n\t\t<a href=\"${0:Previous link}\" class=\"ds_sequential-nav__button  ds_sequential-nav__button--left\">\n\t\t\t<span class=\"ds_sequential-nav__text\" data-label=\"previous\">\n\t\t\t\t${1:Previous text}\n\t\t\t<\/span>\n\t\t<\/a>\n\t<\/div>\n\n\t<div class=\"ds_sequential-nav__item  ds_sequential-nav__item--next\">\n\t\t<a href=\"${2:Next link}\" class=\"ds_sequential-nav__button  ds_sequential-nav__button--right\">\n\t\t\t<span class=\"ds_sequential-nav__text\" data-label=\"next\">\n\t\t\t\t${3:Next text}\n\t\t\t<\/span>\n\t\t<\/a>\n\t<\/div>\n<\/nav>$99",
-          "name" : "ScotGov Sequential Navigation",
-          "scope" : "editor",
-          "trigger" : "scotgov-sequential-navigation"
-        },
-        {
-          "content" : "<nav aria-label=\"Sections\" class=\"ds_side-navigation\" data-module=\"ds-side-navigation\">\n\t<input type=\"checkbox\" class=\"fully-hidden  js-toggle-side-navigation\" id=\"show-side-navigation\" aria-controls=\"side-navigation-root\" \/>\n\t<label class=\"ds_side-navigation__expand  ds_link\" for=\"show-side-navigation\"><span class=\"visually-hidden\">Show all<\/span> Pages in this section <span class=\"ds_side-navigation__expand-indicator\"><\/span><\/label>\n\n\t<ul class=\"ds_side-navigation__list\" id=\"side-navigation-root\">\n\t\t<li class=\"ds_side-navigation__item  ds_side-navigation__item--has-children  ds_side-navigation__item--has-children--expanded\">\n\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Apples<\/a>\n\t\t\t<ul class=\"ds_side-navigation__list\">\n\t\t\t\t<li class=\"ds_side-navigation__item  ds_side-navigation__item--has-children\">\n\t\t\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Green apples<\/a>\n\t\t\t\t\t<ul class=\"ds_side-navigation__list\">\n\t\t\t\t\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t\t\t\t\t<span class=\"ds_side-navigation__link  ds_current\">Bramley<\/span>\n\t\t\t\t\t\t<\/li>\n\t\t\t\t\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Granny Smith<\/a>\n\t\t\t\t\t\t<\/li>\n\t\t\t\t\t<\/ul>\n\t\t\t\t<\/li>\n\t\t\t\t<li class=\"ds_side-navigation__item  ds_side-navigation__item--has-children\">\n\t\t\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Red apples<\/a>\n\t\t\t\t<\/li>\n\t\t\t<\/ul>\n\t\t<\/li>\n\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Bananas<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Cherries<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Dates<\/a>\n\t\t<\/li>\n\t<\/ul>\n<\/nav>",
-          "name" : "ScotGov Side Navigation",
-          "scope" : "editor",
-          "trigger" : "scotgov-side-navigation"
-        },
-        {
-          "content" : "<nav class=\"ds_site-navigation\">\n\t<ul class=\"ds_site-navigation__list\">\n\t\t<li class=\"ds_site-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_site-navigation__link\">\n\t\t\t\tGet started\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_site-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_site-navigation__link\">\n\t\t\t\tStyles\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_site-navigation__item\">\n\t\t\t<span class=\"ds_site-navigation__link  ds_current\">\n\t\t\t\tComponents\n\t\t\t<\/span>\n\t\t<\/li>\n\t\t<li class=\"ds_site-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_site-navigation__link\">\n\t\t\t\tPatterns\n\t\t\t<\/a>\n\t\t<\/li>\n\t<\/ul>\n<\/nav>",
-          "name" : "ScotGov Site Navigation",
-          "scope" : "editor",
-          "trigger" : "scotgov-site-navigation"
-        },
-        {
-          "content" : "<ol class=\"ds_summary-list${0:\tds_summary-list--no-border}\">\n\t<li class=\"ds_summary-list__item\">\n\t\t<span class=\"ds_summary-list__key\">${1:Question text}<\/span>\n\t\t<span class=\"ds_summary-list__value\" id=\"q1\">\n\t\t\t<span class=\"visually-hidden\">Your answer is: <\/span>\n\t\t\t<q class=\"ds_summary-list__answer\">${2:Answer text}<\/q>\n\t\t<\/span>\n\t\t<div class=\"ds_summary-list__actions\">\n\t\t\t<ul class=\"ds_summary-list__actions-list\">\n\t\t\t\t<li class=\"ds_summary-list__actions-list-item\">\n\t\t\t\t\t<button class=\"ds_link\" aria-describedby=\"q1\">Change <span class=\"visually-hidden\">your answer for: <q>${1:Question text}<\/q><\/span> <\/button>\n\t\t\t\t<\/li>\n\t\t\t<\/ul>\n\t\t<\/div>\n\t<\/li>\n\t\n\t$99\n<\/ol>",
-          "name" : "ScotGov Summary List",
-          "scope" : "editor",
-          "trigger" : "scotgov-summary-list"
-        },
-        {
-          "content" : "<li class=\"ds_summary-list__item\">\n\t<span class=\"ds_summary-list__key\">${0:Question text}<\/span>\n\t<span class=\"ds_summary-list__value\" id=\"${1:Question ID}\">\n\t\t<span class=\"visually-hidden\">Your answer is: <\/span>\n\t\t<q class=\"ds_summary-list__answer\">${2:Answer text}<\/q>\n\t<\/span>\n\t<div class=\"ds_summary-list__actions\">\n\t\t<ul class=\"ds_summary-list__actions-list\">\n\t\t\t<li class=\"ds_summary-list__actions-list-item\">\n\t\t\t\t<button class=\"ds_link\" aria-describedby=\"${1:Question ID}\">Change <span class=\"visually-hidden\">your answer for: <q>${0:Question text}<\/q><\/span> <\/button>\n\t\t\t<\/li>\n\t\t<\/ul>\n\t<\/div>\n<\/li>$99",
-          "name" : "ScotGov Summary List Item",
-          "scope" : "editor",
-          "trigger" : "scotgov-summary-list-item"
-        },
-        {
-          "content" : "<div class=\"ds_summary-card\">\n\t<div class=\"ds_summary-card__header\">\n\t\t<h3 class=\"ds_summary-card__header-title\">${0:Card title}<\/h3>\n\t\t<ul class=\"ds_summary-card__actions-list\">\n\t\t\t<li class=\"ds_summary-card__actions-list-item\"><button class=\"ds_link\"> Change <span class=\"visually-hidden\">your answers for: <q>${0:Card title}<\/q><\/span> <\/button><\/li>\n\t\t\t<li class=\"ds_summary-card__actions-list-item\"><button class=\"ds_link\"> Delete <span class=\"visually-hidden\">your answers for: <q>${0:Card title}<\/q><\/span> <\/button><\/li>\n\t\t<\/ul>\n\t<\/div>\n\t<div class=\"ds_summary-card__content\">\n\t\t<ul class=\"ds_summary-list\">\n\t\t\t<li class=\"ds_summary-list__item\"><span class=\"ds_summary-list__key\">Phone number<\/span> <span class=\"ds_summary-list__value\"> <span class=\"visually-hidden\">Your answer is:<\/span> <q class=\"ds_summary-list__answer\">01234 567 890<\/q> <\/span><\/li>\n\t\t\t<li class=\"ds_summary-list__item\"><span class=\"ds_summary-list__key\">Address<\/span> <span class=\"ds_summary-list__value\"> <span class=\"visually-hidden\">Your answer is:<\/span> <q class=\"ds_summary-list__answer\">Victoria Quay<br>\n\t\t\t\t\t\tEdinburgh<br>\n\t\t\t\t\t\tEH6 6QQ<\/br><\/br><\/q> <\/span><\/li>\n\t\t<\/ul>\n\t<\/div>\n<\/div>$99",
-          "name" : "ScotGov Summary Card",
-          "scope" : "editor",
-          "trigger" : "scotgov-summary-card"
-        },
-        {
-          "content" : "<table class=\"ds_table\">\n\t<caption>${0:Caption\/title text}<\/caption>\n\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\">Date<\/th>\n\t\t\t<th scope=\"col\">Day<\/th>\n\t\t\t<th scope=\"col\">Holiday<\/th>\n\t\t<\/tr>\n\t<\/thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>10 April<\/td>\n\t\t\t<td>Friday<\/td>\n\t\t\t<td>Good Friday<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>8 May<\/td>\n\t\t\t<td>Friday<\/td>\n\t\t\t<td>Early May Bank Holiday<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>25 May<\/td>\n\t\t\t<td>Monday<\/td>\n\t\t\t<td>Spring Bank Holiday<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>3 August<\/td>\n\t\t\t<td>Monday<\/td>\n\t\t\t<td>Summer Bank Holiday<\/td>\n\t\t<\/tr>\n\t<\/tbody>\n<\/table>$99",
-          "name" : "ScotGov Table",
-          "scope" : "editor",
-          "trigger" : "scotgov-table"
-        },
-        {
-          "content" : "<div class=\"ds_tabs\" data-module=\"ds-tabs\">\n\t<nav class=\"ds_tabs__navigation\" aria-labelledby=\"ds_tabs__title\">\n\t\t<h2 id=\"ds_tabs__title\" class=\"ds_tabs__title\">Contents<\/h2>\n\t\t<ul class=\"ds_tabs__list\" id=\"tablist\">\n\t\t\t<li class=\"ds_tabs__tab\">\n\t\t\t\t<a class=\"ds_tabs__tab-link\" href=\"#tab1\">${0:Tab 1 title}<\/a>\n\t\t\t<\/li>\n\t\t\t<li class=\"ds_tabs__tab\">\n\t\t\t\t<a class=\"ds_tabs__tab-link\" href=\"#tab2\">${1:Tab 2 title}<\/a>\n\t\t\t<\/li>\n\t\t\t<li class=\"ds_tabs__tab\">\n\t\t\t\t<a class=\"ds_tabs__tab-link\" href=\"#tab3\">${2:Tab 3 title}<\/a>\n\t\t\t<\/li>\n\t\t<\/ul>\n\t<\/nav>\n\t\n\t<div class=\"ds_tabs__content  ds_tabs__content--bordered\" id=\"tab1\">\n\t\t${3:Tab 1 content}\n\t<\/div>\n\t\n\t<div class=\"ds_tabs__content  ds_tabs__content--bordered\" id=\"tab2\">\n\t\t${4:Tab 2 content}\n\t<\/div>\n\t\n\t<div class=\"ds_tabs__content  ds_tabs__content--bordered\" id=\"tab3\">\n\t\t${5:Tab 3 content}\n\t<\/div>\n<\/div>$99",
-          "name" : "ScotGov Tabs",
-          "scope" : "editor",
-          "trigger" : "scotgov-tabs"
-        },
-        {
-          "content" : "<div class=\"ds_tag\">\n\t${0:Tag text}\n<\/div>$99",
-          "name" : "ScotGov Tag",
-          "scope" : "editor",
-          "trigger" : "scotgov-tag"
-        },
-        {
-          "content" : "<div class=\"ds_question\">\n\t<label class=\"ds_label\" for=\"${0:Input ID\/Name}\">${1:Question text}<\/label>\n\t<input class=\"ds_input\tds_input--fixed-${2:Character width: 20, 10, 5, 4, 3, 2}\tds_input--fluid-${3:Fraction width: three-quarters, two-thirds, half, one-third, one-quarter}\" id=\"${0:Input ID\/Name}\" name=\"${0:Input ID\/Name}\" type=\"text\" \/>\n<\/div>$99",
-          "name" : "ScotGov Text Input",
-          "scope" : "editor",
-          "trigger" : "scotgov-text-input"
-        },
-        {
-          "content" : "<div class=\"ds_question\">\n\t<label class=\"ds_label\" for=\"${0:Input ID\/Name}\">${1:Question text}<\/label>\n\t<div class=\"ds_currency-wrapper\" data-symbol=\"${2:Currency symbol, eg £}\">\n\t\t<input class=\"ds_input\tds_input--fixed-${3:Character width: 20, 10, 5, 4, 3, 2}\tds_input--fluid-${4:Fraction width: three-quarters, two-thirds, half, one-third, one-quarter}\" id=\"${0:Input ID\/Name}\" name=\"${0:Input ID\/Name}\" type=\"text\" \/>\n\t<\/div>\n<\/div>$99",
-          "name" : "ScotGov Currency Input",
-          "scope" : "editor",
-          "trigger" : "scotgov-Currency-input"
-        },
-        {
-          "content" : "<div class=\"ds_question\">\n\t<label class=\"ds_label\" for=\"$1\">${2:Label text}<\/label>\n\t<textarea class=\"ds_input\" id=\"$1\" name=\"$1\" rows=\"${3:5}\"><\/textarea>\n<\/div>$99",
-          "name" : "ScotGov Textarea",
-          "scope" : "editor",
-          "trigger" : "scotgov-textarea"
-        },
-        {
-          "content" : "<div class=\"ds_warning-text\">\n\t<strong class=\"ds_warning-text__icon\" aria-hidden=\"true\"><\/strong>\n\t<strong class=\"visually-hidden\">Warning<\/strong>\n\t<div class=\"ds_warning-text__text\">${0:Warning text}<\/div>\n<\/div>$99",
-          "name" : "ScotGov Warning",
-          "scope" : "editor",
-          "trigger" : "scotgov-textarea"
-        },
-        {
-          "content" : "<h${0:1, 2, 3, 4, 5} class=\"native-h${0:1, 2, 3, 4, 5} ${1:Override: ds_h3}\">\n\t${2:Header text}\n<\/h${0:1, 2, 3, 4, 5}>",
-          "name" : "ScotGov Typography Header",
-          "scope" : "editor",
-          "trigger" : "scotgov-header"
-        }
-      ],
-      "name" : "ScotGov Components"
+      "content" : "<div class=\"ds_accordion\" data-module=\"ds-accordion\">\n\t<button type=\"button\" class=\"ds_link  ds_accordion__open-all  js-open-all\">Open all <span class=\"visually-hidden\">sections<\/span><\/button>\n\n\t<div class=\"ds_accordion-item\">\n\t\t<input type=\"checkbox\" class=\"visually-hidden  ds_accordion-item__control\" id=\"panel-${0:Panel number}\" aria-labelledby=\"panel-${0:Panel number}-heading\" \/>\n\t\t<div class=\"ds_accordion-item__header\">\n\t\t\t<h3 id=\"panel-${0:Panel number}-heading\" class=\"ds_accordion-item__title\">\n\t\t\t\t${1:Accordion title}\n\t\t\t<\/h3>\n\t\t\t<span class=\"ds_accordion-item__indicator\"><\/span>\n\t\t\t<label class=\"ds_accordion-item__label\" for=\"panel-${0:Panel number}\"><span class=\"visually-hidden\">Show this section<\/span><\/label>\n\t\t<\/div>\n\t\t<div class=\"ds_accordion-item__body\">\n\t\t\t<p>${3:Panel body text}<\/p>\n\t\t<\/div>\n\t<\/div>\n<\/div>$99",
+      "name" : "ScotGov Accordion",
+      "scope" : "editor",
+      "trigger" : "scotgov-accordion"
+    },
+    {
+      "content" : "<div class=\"ds_accordion-item\">\n\t<input type=\"checkbox\" class=\"visually-hidden  ds_accordion-item__control\" id=\"panel-${0:Panel number}\" aria-labelledby=\"panel-${0:Panel number}-heading\" \/>\n\t<div class=\"ds_accordion-item__header\">\n\t\t<h3 id=\"panel-${0:Panel number}-heading\" class=\"ds_accordion-item__title\">\n\t\t\t${1:Accordion title}\n\t\t<\/h3>\n\t\t<span class=\"ds_accordion-item__indicator\"><\/span>\n\t\t<label class=\"ds_accordion-item__label\" for=\"panel-${0:Panel number}\"><span class=\"visually-hidden\">Show this section<\/span><\/label>\n\t<\/div>\n\t<div class=\"ds_accordion-item__body\">\n\t\t<p>${3:Panel body text}<\/p>\n\t<\/div>\n<\/div>$99",
+      "name" : "ScotGov Accordion Item",
+      "scope" : "editor",
+      "trigger" : "scotgov-accordion-item"
+    },
+    {
+      "content" : "<div class=\"ds_aspect-box  ds_aspect-box--${0:square \/ 43 \/ 219}\">\n\t<img src=\"$1\" alt=\"$2\" class=\"ds_aspect-box__inner\">\n<\/div>$99",
+      "name" : "ScotGov Aspect Box (Image)",
+      "scope" : "editor",
+      "trigger" : "scotgov-aspect-box-image"
+    },
+    {
+      "content" : "<nav aria-label=\"Breadcrumb\">\n\t<ol class=\"ds_breadcrumbs\">\n\t\t<li class=\"ds_breadcrumbs__item\">\n\t\t\t<a class=\"ds_breadcrumbs__link\" href=\"${0:Item 1 link}\">\n\t\t\t\t${1:Item 1 title}\n\t\t\t<\/a>\n\t\t<\/li>\n\n\t\t<li class=\"ds_breadcrumbs__item${2:  visually-hidden}\" aria-current=\"page\">\n\t\t\t${3:Item 2 title}\n\t\t<\/li>\n\t<\/ol>\n<\/nav>$99",
+      "name" : "ScotGov Breadcrumb",
+      "scope" : "editor",
+      "trigger" : "scotgov-breadcrumb"
+    },
+    {
+      "content" : "<li class=\"ds_breadcrumbs__item\">\n\t<a class=\"ds_breadcrumbs__link\" href=\"${0:Item link}\">\n\t\t${1:Item title}\n\t<\/a>\n<\/li>$99",
+      "name" : "ScotGov Breadcrumb Item",
+      "scope" : "editor",
+      "trigger" : "scotgov-breadcrumb-item"
+    },
+    {
+      "content" : "<${0:a or button} class=\"ds_button${1:  ds_button--cancel}${2:  ds_button--secondary}${3:  ds_button--small}\"${4: href=\"#0\"}>${5:Button text}<\/${0:a or button}>$99",
+      "name" : "ScotGov Button",
+      "scope" : "editor",
+      "trigger" : "scotgov-button"
+    },
+    {
+      "content" : "<div class=\"ds_button-group\">\n\n\t${:\/\/Use two or more ScotGov Buttons here}\n\n<\/div>",
+      "name" : "ScotGov Button Group",
+      "scope" : "editor",
+      "trigger" : "scotgov-button-group"
+    },
+    {
+      "content" : "<div class=\"ds_question\" data-module=\"ds-character-count\"${0: data-threshold=\"80\"}>\n\t<label class=\"ds_label\" for=\"$1\">${2:Label text}<\/label>\n\t<input class=\"ds_input\" id=\"$1\" name=\"$1\" type=\"text\" maxlength=\"${3:20}\" \/>\n<\/div>$99",
+      "name" : "ScotGov Character Count Input",
+      "scope" : "editor",
+      "trigger" : "scotgov-character-count--input"
+    },
+    {
+      "content" : "<div class=\"ds_question\" data-module=\"ds-character-count\"${0: data-threshold=\"80\"}>\n\t<label class=\"ds_label\" for=\"$1\">${2:Label text}<\/label>\n\t<textarea class=\"ds_input\" id=\"$1\" name=\"$1\" rows=\"${3:5}\" maxlength=\"${4:25}\"><\/textarea>\n<\/div>$99",
+      "name" : "ScotGov Character Count Textarea",
+      "scope" : "editor",
+      "trigger" : "scotgov-character-count--textarea"
+    },
+    {
+      "content" : "<div class=\"ds_question\">\n\t<fieldset aria-describedby=\"${0:Group name}-hint\">\n\t\t<legend>${1:Question text}<\/legend>\n\t\t<p class=\"ds_hint-text\" id=\"${0:Group name}-hint\">${2:Hint text}<\/p>\n\n\t\t<div class=\"ds_field-group\">\n\t\t\t<div class=\"ds_${3:checkbox or radio}\">\n\t\t\t\t<input class=\"ds_${3:checkbox or radio}__input\" id=\"${4:Item ID}\" name=\"${0:Group name}\" type=\"${3:checkbox or radio}\" value=\"${4:Item ID}\" \/>\n\t\t\t\t<label class=\"ds_${3:checkbox or radio}__label\" for=\"${4:Item ID}\">${5:Item text}<\/label>\n\t\t\t<\/div>\n\n\t\t\t<div class=\"ds_${3:checkbox or radio}\">\n\t\t\t\t<input class=\"ds_${3:checkbox or radio}__input\" id=\"${6:Item ID}\" name=\"${0:Group name}\" type=\"${3:checkbox or radio}\" value=\"${6:Item ID}\" \/>\n\t\t\t\t<label class=\"ds_${3:checkbox or radio}__label\" for=\"${6:Item ID}\">${7:Item text}<\/label>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/fieldset>\n<\/div>",
+      "name" : "ScotGov Checkboxes\/Radios",
+      "scope" : "editor",
+      "trigger" : "scotgov-checkboxes-radios"
+    },
+    {
+      "content" : "<div class=\"ds_${0:checkbox or radio}\">\n\t<input class=\"ds_${0:checkbox or radio}__input\" id=\"${1:Item ID}\" name=\"${2:Group name}\" type=\"${0:checkbox or radio}\" value=\"${1:Item ID}\" \/>\n\t<label class=\"ds_${0:checkbox or radio}__label\" for=\"${1:Item ID}\">${3:Item text}<\/label>\n<\/div>$99",
+      "name" : "ScotGov Checkbox\/Radio Item",
+      "scope" : "editor",
+      "trigger" : "scotgov-checkbox-radio-item"
+    },
+    {
+      "content" : "<p class=\"ds_checkbox-separator\">or<\/p>\n\n<div class=\"ds_checkbox\">\n\t<input class=\"ds_checkbox__input\" id=\"${0:Item ID}\" name=\"${1:Group name}\" type=\"checkbox\" data-behaviour=\"exclusive\" \/>\n\t<label class=\"ds_checkbox__label\" for=\"${0:Item ID}\">${2:Item text}<\/label>\n<\/div>$99",
+      "name" : "ScotGov Checkbox None Item",
+      "scope" : "editor",
+      "trigger" : "scotgov-checkbox-none-item"
+    },
+    {
+      "content" : "<fieldset>\n\t<legend>${0:Question text}<\/legend>\n\t<p class=\"ds_hint-text\">For example, 31 3 1980<\/p>\n\t\n\t<div class=\"ds_datepicker  ds_datepicker--multiple\" data-module=\"ds-datepicker\">\n\t\t<div class=\"ds_datepicker__input-wrapper\">\n\t\t\t<div>\n\t\t\t\t<label class=\"ds_label\" for=\"day\">Day<\/label>\n\t\t\t\t<input class=\"ds_input ds_input--fixed-2 js-datepicker-date\" id=\"day\" name=\"${1:Group name}\"><\/input>\n\t\t\t<\/div>\n\t\t\t<div>\n\t\t\t\t<label class=\"ds_label\" for=\"month\">Month<\/label>\n\t\t\t\t<input class=\"ds_input ds_input--fixed-2 js-datepicker-month\" id=\"month\" name=\"${1:Group name}\"><\/input>\n\t\t\t<\/div>\n\t\t\t<div>\n\t\t\t\t<label class=\"ds_label\" for=\"year\">Year<\/label>\n\t\t\t\t<input class=\"ds_input ds_input--fixed-4 js-datepicker-year\" id=\"year\" name=\"${1:Group name}\"><\/input>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n<\/fieldset>$99",
+      "name" : "ScotGov Date Picker",
+      "scope" : "editor",
+      "trigger" : "scotgov-date-picker"
+    },
+    {
+      "content" : "<details class=\"ds_details\">\n\t<summary class=\"ds_details__summary\">\n\t\t${0:Summary\/title text}\n\t<\/summary>\n\t\n\t<div class=\"ds_details__text\">\n\t\t<p>${1:Body\/hidden text}<\/p>\n\t<\/div>\n<\/details>$99",
+      "name" : "ScotGov Details",
+      "scope" : "editor",
+      "trigger" : "scotgov-details"
+    },
+    {
+      "content" : "<p class=\"ds_question__error-message\">${0:Error text}<\/p>$99",
+      "name" : "ScotGov Error Text",
+      "scope" : "editor",
+      "trigger" : "scotgov-error-text"
+    },
+    {
+      "content" : "<div class=\"ds_error-summary\" id=\"error-summary\" aria-labelledby=\"error-summary-title\" role=\"alert\">\n\t<h2 class=\"ds_error-summary__title\" id=\"error-summary-title\">There is a problem<\/h2>\n\n\t<ul class=\"ds_error-summary__list\">\n\t\t<li>\n\t\t\t<a href=\"#${0:Quention ID}\">${1:Error text}<\/a>\n\t\t<\/li>\n\t<\/ul>\n<\/div>$99",
+      "name" : "ScotGov Error Summary",
+      "scope" : "editor",
+      "trigger" : "scotgov-error-summary"
+    },
+    {
+      "content" : "<header class=\"ds_feature-header${0:  ds_feature-header--background}\">\n\t<div class=\"ds_feature-header__primary\">\n\t\t<h1 class=\"ds_feature-header__title\">${1:Header text}<\/h1>\n\t\t<p>${2:Body text}<\/p>\n\t<\/div>\n\n\t<div class=\"ds_feature-header__secondary\">\n\t\t<img class=\"ds_feature-header__image\" alt=\"\" src=\"${3:Image source} \/>\n\t<\/div>\n<\/header>$99",
+      "name" : "ScotGov Feature Header",
+      "scope" : "editor",
+      "trigger" : "scotgov-feature-header"
+    },
+    {
+      "content" : "<div class=\"ds_inset-text\">\n\t<div class=\"ds_inset-text__text\">\n\t\t${0:Text}\n\t<\/div>\n<\/div>$99",
+      "name" : "ScotGov Inset Text",
+      "scope" : "editor",
+      "trigger" : "scotgov-inset-text"
+    },
+    {
+      "content" : "<div class=\"ds_notification-panel ds_notification-panel--success\">\n\t<h1 class=\"ds_notification-panel__title\">${0:Title text}<\/h1>\n\t<div class=\"ds_notification-panel__content\">\n\t\t<p>Your reference number is <br \/><strong class=\"beta\">SG0123456<\/strong><\/p>\n\t<\/div>\n<\/div>$99",
+      "name" : "ScotGov Notification Panel",
+      "scope" : "editor",
+      "trigger" : "scotgov-notification-panel"
+    },
+    {
+      "content" : "<header class=\"ds_page-header\">\n\t<span class=\"ds_page-header__label  ds_content-label\">${0:Subtitle\/section name text}<\/span>\n\t<h1 class=\"ds_page-header__title\">${1:Title text}<\/h1>\n\n\t<dl class=\"ds_page-header__metadata  ds_metadata\">\n\t\t<div class=\"ds_metadata__item\">\n\t\t\t<dt class=\"ds_metadata__key\">Last updated<\/dt>\n\t\t\t<dd class=\"ds_metadata__value\">${2:Date text}<\/dd>\n\t\t<\/div>\n\t<\/dl>\n<\/header>$99",
+      "name" : "ScotGov Page Header",
+      "scope" : "editor",
+      "trigger" : "scotgov-page-header"
+    },
+    {
+      "content" : "<nav class=\"ds_pagination\" aria-label=\"Search result pages\">\n\t<ul class=\"ds_pagination__list\">\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Page 1\" aria-current=\"page\" class=\"ds_pagination__link  ds_current\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">1<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Page 2\" class=\"ds_pagination__link\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">2<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Page 3\" class=\"ds_pagination__link\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">3<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Page 4\" class=\"ds_pagination__link\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">4<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\" aria-hidden=\"true\">\n\t\t\t<span class=\"ds_pagination__link  ds_pagination__link--ellipsis\">&hellip;<\/span>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Last page, page 27\" class=\"ds_pagination__link\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">27<\/span>\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_pagination__item\">\n\t\t\t<a aria-label=\"Next page\" class=\"ds_pagination__link  ds_pagination__link--text  ds_pagination__link--icon\" href=\"#\">\n\t\t\t\t<span class=\"ds_pagination__link-label\">Next<\/span>\n\t\t\t\t<svg class=\"ds_icon\" aria-hidden=\"true\" role=\"img\">\n\t\t\t\t\t<use href=\"\/assets\/images\/icons\/icons.stack.svg#chevron_right\"><\/use>\n\t\t\t\t<\/svg>\n\t\t\t<\/a>\n\t\t<\/li>\n\t<\/ul>\n<\/nav>",
+      "name" : "ScotGov Pagination",
+      "scope" : "editor",
+      "trigger" : "scotgov-pagination"
+    },
+    {
+      "content" : "<div>\n\t<label class=\"ds_label\" for=\"${0:Select ID\/Name}\">${1:Question text}<\/label>\n\t<div class=\"ds_select-wrapper  ds_input--fluid-one-third\">\n\t\t<select class=\"ds_select\" id=\"${0:Select ID\/Name}\" name=\"${0:Select ID\/Name}\">\n\t\t\t<option><\/option>\n\t\t\t<option>Accordion<\/option>\n\t\t\t<option>Breadcrumbs<\/option>\n\t\t\t<option>Button<\/option>\n\t\t<\/select>\n\t\t<span class=\"ds_select-arrow\" aria-hidden=\"true\"><\/span>\n\t<\/div>\n<\/div>$99",
+      "name" : "ScotGov Select",
+      "scope" : "editor",
+      "trigger" : "scotgov-select"
+    },
+    {
+      "content" : "<nav class=\"ds_sequential-nav\" aria-label=\"Article navigation\">\n\t<div class=\"ds_sequential-nav__item  ds_sequential-nav__item--prev\">\n\t\t<a href=\"${0:Previous link}\" class=\"ds_sequential-nav__button  ds_sequential-nav__button--left\">\n\t\t\t<span class=\"ds_sequential-nav__text\" data-label=\"previous\">\n\t\t\t\t${1:Previous text}\n\t\t\t<\/span>\n\t\t<\/a>\n\t<\/div>\n\n\t<div class=\"ds_sequential-nav__item  ds_sequential-nav__item--next\">\n\t\t<a href=\"${2:Next link}\" class=\"ds_sequential-nav__button  ds_sequential-nav__button--right\">\n\t\t\t<span class=\"ds_sequential-nav__text\" data-label=\"next\">\n\t\t\t\t${3:Next text}\n\t\t\t<\/span>\n\t\t<\/a>\n\t<\/div>\n<\/nav>$99",
+      "name" : "ScotGov Sequential Navigation",
+      "scope" : "editor",
+      "trigger" : "scotgov-sequential-navigation"
+    },
+    {
+      "content" : "<nav aria-label=\"Sections\" class=\"ds_side-navigation\" data-module=\"ds-side-navigation\">\n\t<input type=\"checkbox\" class=\"fully-hidden  js-toggle-side-navigation\" id=\"show-side-navigation\" aria-controls=\"side-navigation-root\" \/>\n\t<label class=\"ds_side-navigation__expand  ds_link\" for=\"show-side-navigation\"><span class=\"visually-hidden\">Show all<\/span> Pages in this section <span class=\"ds_side-navigation__expand-indicator\"><\/span><\/label>\n\n\t<ul class=\"ds_side-navigation__list\" id=\"side-navigation-root\">\n\t\t<li class=\"ds_side-navigation__item  ds_side-navigation__item--has-children  ds_side-navigation__item--has-children--expanded\">\n\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Apples<\/a>\n\t\t\t<ul class=\"ds_side-navigation__list\">\n\t\t\t\t<li class=\"ds_side-navigation__item  ds_side-navigation__item--has-children\">\n\t\t\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Green apples<\/a>\n\t\t\t\t\t<ul class=\"ds_side-navigation__list\">\n\t\t\t\t\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t\t\t\t\t<span class=\"ds_side-navigation__link  ds_current\">Bramley<\/span>\n\t\t\t\t\t\t<\/li>\n\t\t\t\t\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t\t\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Granny Smith<\/a>\n\t\t\t\t\t\t<\/li>\n\t\t\t\t\t<\/ul>\n\t\t\t\t<\/li>\n\t\t\t\t<li class=\"ds_side-navigation__item  ds_side-navigation__item--has-children\">\n\t\t\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Red apples<\/a>\n\t\t\t\t<\/li>\n\t\t\t<\/ul>\n\t\t<\/li>\n\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Bananas<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Cherries<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_side-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_side-navigation__link\">Dates<\/a>\n\t\t<\/li>\n\t<\/ul>\n<\/nav>",
+      "name" : "ScotGov Side Navigation",
+      "scope" : "editor",
+      "trigger" : "scotgov-side-navigation"
+    },
+    {
+      "content" : "<nav class=\"ds_site-navigation\">\n\t<ul class=\"ds_site-navigation__list\">\n\t\t<li class=\"ds_site-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_site-navigation__link\">\n\t\t\t\tGet started\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_site-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_site-navigation__link\">\n\t\t\t\tStyles\n\t\t\t<\/a>\n\t\t<\/li>\n\t\t<li class=\"ds_site-navigation__item\">\n\t\t\t<span class=\"ds_site-navigation__link  ds_current\">\n\t\t\t\tComponents\n\t\t\t<\/span>\n\t\t<\/li>\n\t\t<li class=\"ds_site-navigation__item\">\n\t\t\t<a href=\"#\" class=\"ds_site-navigation__link\">\n\t\t\t\tPatterns\n\t\t\t<\/a>\n\t\t<\/li>\n\t<\/ul>\n<\/nav>",
+      "name" : "ScotGov Site Navigation",
+      "scope" : "editor",
+      "trigger" : "scotgov-site-navigation"
+    },
+    {
+      "content" : "<ol class=\"ds_summary-list${0:\tds_summary-list--no-border}\">\n\t<li class=\"ds_summary-list__item\">\n\t\t<span class=\"ds_summary-list__key\">${1:Question text}<\/span>\n\t\t<span class=\"ds_summary-list__value\" id=\"q1\">\n\t\t\t<span class=\"visually-hidden\">Your answer is: <\/span>\n\t\t\t<q class=\"ds_summary-list__answer\">${2:Answer text}<\/q>\n\t\t<\/span>\n\t\t<div class=\"ds_summary-list__actions\">\n\t\t\t<ul class=\"ds_summary-list__actions-list\">\n\t\t\t\t<li class=\"ds_summary-list__actions-list-item\">\n\t\t\t\t\t<button class=\"ds_link\" aria-describedby=\"q1\">Change <span class=\"visually-hidden\">your answer for: <q>${1:Question text}<\/q><\/span> <\/button>\n\t\t\t\t<\/li>\n\t\t\t<\/ul>\n\t\t<\/div>\n\t<\/li>\n\t\n\t$99\n<\/ol>",
+      "name" : "ScotGov Summary List",
+      "scope" : "editor",
+      "trigger" : "scotgov-summary-list"
+    },
+    {
+      "content" : "<li class=\"ds_summary-list__item\">\n\t<span class=\"ds_summary-list__key\">${0:Question text}<\/span>\n\t<span class=\"ds_summary-list__value\" id=\"${1:Question ID}\">\n\t\t<span class=\"visually-hidden\">Your answer is: <\/span>\n\t\t<q class=\"ds_summary-list__answer\">${2:Answer text}<\/q>\n\t<\/span>\n\t<div class=\"ds_summary-list__actions\">\n\t\t<ul class=\"ds_summary-list__actions-list\">\n\t\t\t<li class=\"ds_summary-list__actions-list-item\">\n\t\t\t\t<button class=\"ds_link\" aria-describedby=\"${1:Question ID}\">Change <span class=\"visually-hidden\">your answer for: <q>${0:Question text}<\/q><\/span> <\/button>\n\t\t\t<\/li>\n\t\t<\/ul>\n\t<\/div>\n<\/li>$99",
+      "name" : "ScotGov Summary List Item",
+      "scope" : "editor",
+      "trigger" : "scotgov-summary-list-item"
+    },
+    {
+      "content" : "<div class=\"ds_summary-card\">\n\t<div class=\"ds_summary-card__header\">\n\t\t<h3 class=\"ds_summary-card__header-title\">${0:Card title}<\/h3>\n\t\t<ul class=\"ds_summary-card__actions-list\">\n\t\t\t<li class=\"ds_summary-card__actions-list-item\"><button class=\"ds_link\"> Change <span class=\"visually-hidden\">your answers for: <q>${0:Card title}<\/q><\/span> <\/button><\/li>\n\t\t\t<li class=\"ds_summary-card__actions-list-item\"><button class=\"ds_link\"> Delete <span class=\"visually-hidden\">your answers for: <q>${0:Card title}<\/q><\/span> <\/button><\/li>\n\t\t<\/ul>\n\t<\/div>\n\t<div class=\"ds_summary-card__content\">\n\t\t<ul class=\"ds_summary-list\">\n\t\t\t<li class=\"ds_summary-list__item\"><span class=\"ds_summary-list__key\">Phone number<\/span> <span class=\"ds_summary-list__value\"> <span class=\"visually-hidden\">Your answer is:<\/span> <q class=\"ds_summary-list__answer\">01234 567 890<\/q> <\/span><\/li>\n\t\t\t<li class=\"ds_summary-list__item\"><span class=\"ds_summary-list__key\">Address<\/span> <span class=\"ds_summary-list__value\"> <span class=\"visually-hidden\">Your answer is:<\/span> <q class=\"ds_summary-list__answer\">Victoria Quay<br>\n\t\t\t\t\t\tEdinburgh<br>\n\t\t\t\t\t\tEH6 6QQ<\/br><\/br><\/q> <\/span><\/li>\n\t\t<\/ul>\n\t<\/div>\n<\/div>$99",
+      "name" : "ScotGov Summary Card",
+      "scope" : "editor",
+      "trigger" : "scotgov-summary-card"
+    },
+    {
+      "content" : "<table class=\"ds_table\">\n\t<caption>${0:Caption\/title text}<\/caption>\n\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\">Date<\/th>\n\t\t\t<th scope=\"col\">Day<\/th>\n\t\t\t<th scope=\"col\">Holiday<\/th>\n\t\t<\/tr>\n\t<\/thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>10 April<\/td>\n\t\t\t<td>Friday<\/td>\n\t\t\t<td>Good Friday<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>8 May<\/td>\n\t\t\t<td>Friday<\/td>\n\t\t\t<td>Early May Bank Holiday<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>25 May<\/td>\n\t\t\t<td>Monday<\/td>\n\t\t\t<td>Spring Bank Holiday<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>3 August<\/td>\n\t\t\t<td>Monday<\/td>\n\t\t\t<td>Summer Bank Holiday<\/td>\n\t\t<\/tr>\n\t<\/tbody>\n<\/table>$99",
+      "name" : "ScotGov Table",
+      "scope" : "editor",
+      "trigger" : "scotgov-table"
+    },
+    {
+      "content" : "<div class=\"ds_tabs\" data-module=\"ds-tabs\">\n\t<nav class=\"ds_tabs__navigation\" aria-labelledby=\"ds_tabs__title\">\n\t\t<h2 id=\"ds_tabs__title\" class=\"ds_tabs__title\">Contents<\/h2>\n\t\t<ul class=\"ds_tabs__list\" id=\"tablist\">\n\t\t\t<li class=\"ds_tabs__tab\">\n\t\t\t\t<a class=\"ds_tabs__tab-link\" href=\"#tab1\">${0:Tab 1 title}<\/a>\n\t\t\t<\/li>\n\t\t\t<li class=\"ds_tabs__tab\">\n\t\t\t\t<a class=\"ds_tabs__tab-link\" href=\"#tab2\">${1:Tab 2 title}<\/a>\n\t\t\t<\/li>\n\t\t\t<li class=\"ds_tabs__tab\">\n\t\t\t\t<a class=\"ds_tabs__tab-link\" href=\"#tab3\">${2:Tab 3 title}<\/a>\n\t\t\t<\/li>\n\t\t<\/ul>\n\t<\/nav>\n\t\n\t<div class=\"ds_tabs__content  ds_tabs__content--bordered\" id=\"tab1\">\n\t\t${3:Tab 1 content}\n\t<\/div>\n\t\n\t<div class=\"ds_tabs__content  ds_tabs__content--bordered\" id=\"tab2\">\n\t\t${4:Tab 2 content}\n\t<\/div>\n\t\n\t<div class=\"ds_tabs__content  ds_tabs__content--bordered\" id=\"tab3\">\n\t\t${5:Tab 3 content}\n\t<\/div>\n<\/div>$99",
+      "name" : "ScotGov Tabs",
+      "scope" : "editor",
+      "trigger" : "scotgov-tabs"
+    },
+    {
+      "content" : "<div class=\"ds_tag\">\n\t${0:Tag text}\n<\/div>$99",
+      "name" : "ScotGov Tag",
+      "scope" : "editor",
+      "trigger" : "scotgov-tag"
+    },
+    {
+      "content" : "<div class=\"ds_question\">\n\t<label class=\"ds_label\" for=\"${0:Input ID\/Name}\">${1:Question text}<\/label>\n\t<input class=\"ds_input\tds_input--fixed-${2:Character width: 20, 10, 5, 4, 3, 2}\tds_input--fluid-${3:Fraction width: three-quarters, two-thirds, half, one-third, one-quarter}\" id=\"${0:Input ID\/Name}\" name=\"${0:Input ID\/Name}\" type=\"text\" \/>\n<\/div>$99",
+      "name" : "ScotGov Text Input",
+      "scope" : "editor",
+      "trigger" : "scotgov-text-input"
+    },
+    {
+      "content" : "<div class=\"ds_question\">\n\t<label class=\"ds_label\" for=\"${0:Input ID\/Name}\">${1:Question text}<\/label>\n\t<div class=\"ds_currency-wrapper\" data-symbol=\"${2:Currency symbol, eg £}\">\n\t\t<input class=\"ds_input\tds_input--fixed-${3:Character width: 20, 10, 5, 4, 3, 2}\tds_input--fluid-${4:Fraction width: three-quarters, two-thirds, half, one-third, one-quarter}\" id=\"${0:Input ID\/Name}\" name=\"${0:Input ID\/Name}\" type=\"text\" \/>\n\t<\/div>\n<\/div>$99",
+      "name" : "ScotGov Currency Input",
+      "scope" : "editor",
+      "trigger" : "scotgov-Currency-input"
+    },
+    {
+      "content" : "<div class=\"ds_question\">\n\t<label class=\"ds_label\" for=\"$1\">${2:Label text}<\/label>\n\t<textarea class=\"ds_input\" id=\"$1\" name=\"$1\" rows=\"${3:5}\"><\/textarea>\n<\/div>$99",
+      "name" : "ScotGov Textarea",
+      "scope" : "editor",
+      "trigger" : "scotgov-textarea"
+    },
+    {
+      "content" : "<div class=\"ds_warning-text\">\n\t<strong class=\"ds_warning-text__icon\" aria-hidden=\"true\"><\/strong>\n\t<strong class=\"visually-hidden\">Warning<\/strong>\n\t<div class=\"ds_warning-text__text\">${0:Warning text}<\/div>\n<\/div>$99",
+      "name" : "ScotGov Warning",
+      "scope" : "editor",
+      "trigger" : "scotgov-textarea"
+    },
+    {
+      "content" : "<h${0:1, 2, 3, 4, 5} class=\"native-h${0:1, 2, 3, 4, 5} ${1:Override: ds_h3}\">\n\t${2:Header text}\n<\/h${0:1, 2, 3, 4, 5}>",
+      "name" : "ScotGov Typography Header",
+      "scope" : "editor",
+      "trigger" : "scotgov-header"
     }
   ]
 }
